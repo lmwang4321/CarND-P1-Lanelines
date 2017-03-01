@@ -1,0 +1,3 @@
+Herein tries to detect the lanes on the road by drawing lines on the lanes. In order to do so, I tried to fix two points with respect to the sign of slopes on the lanes and try to extend it to the bottom of image based on the positive and negative  average slope calculated.
+
+This project is weak in terms of that I have to choose and fix two points that are on the lanes. So every time the image changes greatly, I have to select other two points on my hand. This defect can be ameliorated by trying to find the farthest point on the lanes, e.g. the point on the lines detected by hough_line() with maximal x value and minimal y value for the lanes with negative slope. 
